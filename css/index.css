@@ -1,0 +1,136 @@
+.header {
+  width: 100%;
+  border-bottom: 2px solid #ea4a36;
+  *zoom: 1;
+}
+.header::after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
+.header .header-top-wrap {
+  height: 30px;
+  width: 100%;
+  background-color: #eaeaea ;
+}
+.header .header-top-wrap .header-top {
+  width: 1220px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  background-color: #eaeaea;
+  *zoom: 1;
+}
+.header .header-top-wrap .header-top::after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
+.header .header-top-wrap .header-top .head-left {
+  float: left;
+  padding: 0 10px;
+}
+.header .header-top-wrap .header-top .head-left div {
+  float: left;
+}
+.header .header-top-wrap .header-top .head-left div a {
+  padding: 0 5px;
+}
+.header .header-top-wrap .header-top .head-left .registered a {
+  border-left: 1px solid #b3aeae;
+}
+.header .header-top-wrap .header-top .head-left .welcome {
+  margin-right: 10px;
+}
+.header .header-top-wrap .header-top .head-right {
+  height: 30px;
+  box-sizing: border-box;
+  float: right;
+  font-size: 0;
+}
+.header .header-top-wrap .header-top .head-right a {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.header .header-top-wrap .header-top .head-right a ~ a {
+  border-left: 1px solid #b3aeae;
+}
+.header .header-middle {
+  width: 1220px;
+  height: 75px;
+  margin: 0 auto 65px;
+  *zoom: 1;
+}
+.header .header-middle::after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
+.header .header-middle .logo {
+  margin-top: 20px;
+  float: left;
+}
+.header .header-middle .search {
+  margin-top: 30px;
+  float: right;
+  *zoom: 1;
+}
+.header .header-middle .search::after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
+.header .header-middle .search input {
+  display: block;
+  box-sizing: border-box;
+  width: 490px;
+  height: 32px;
+  outline: none;
+  border: 1px solid #ea4a36;
+  float: left;
+}
+.header .header-middle .search button {
+  height: 32px;
+  width: 68px;
+  outline: none;
+  border: 1px solid #ea4a36;
+  background-color: #ea4a36;
+  color: white;
+}
+.header .header-bottom {
+  width: 1220px;
+  height: 50px;
+  *zoom: 1;
+}
+.header .header-bottom::after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
+.header .header-bottom .allClass {
+  width: 210px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  float: left;
+  margin-left: 80px;
+  margin-right: 20px;
+  color: white;
+  background-color: #ea4a36;
+}
+.header .header-bottom .nav {
+  float: left;
+  font-size: 16px;
+  color: #333333;
+  line-height: 50px;
+}
+.header .header-bottom .nav a {
+  display: inline-block;
+  margin-right: 40px;
+}

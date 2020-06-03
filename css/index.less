@@ -1,0 +1,112 @@
+.clearFix(){
+  *zoom: 1;
+  &::after{
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+  }
+}
+// 内容区宽度
+@width:1220px;
+//主题背景色
+@bg:#ea4a36;
+// 黑色的字
+@color:#333;
+.header{
+	width: 100%; 
+	border-bottom: 2px solid @bg;
+	.clearFix();
+	.header-top-wrap{
+		height: 30px;width: 100%;
+		background-color:#eaeaea ;
+		.header-top{
+			width: 1220px; height: 30px; line-height: 30px; margin: 0 auto;
+			background-color: #eaeaea;
+			.clearFix();
+			.head-left{
+				float: left;
+				padding: 0 10px;
+				div{
+					float: left;
+					a{
+						padding: 0 5px;
+					}
+				}
+				.registered a{
+					border-left: 1px solid #b3aeae;
+				}
+				.welcome{
+					margin-right: 10px;
+				}
+				
+			}
+			.head-right{
+				height: 30px;
+				box-sizing: border-box;
+				float: right;
+				//去除a标签之间的空隙
+				font-size: 0;
+				a{
+					font-size: 12px;
+					padding: 0 10px;
+					// 竖线的处理
+					& ~a{
+						border-left: 1px solid #b3aeae;
+					}
+				}
+			}
+			
+		}
+	}
+	
+	// 头部中间的logo和搜索框
+	.header-middle{
+		width: @width; height: 75px; margin: 0 auto 65px;
+		.clearFix();
+		.logo{
+			margin-top: 20px;
+			float: left;
+		}
+		.search{
+			margin-top: 30px;
+			float: right;
+			.clearFix();
+			input{
+				display: block;box-sizing: border-box;
+				width: 490px; height: 32px;		
+				outline: none;border: 1px solid @bg;
+				float: left;
+			}
+			button{
+				height: 32px;width: 68px;
+				outline: none;
+				border: 1px solid @bg;
+				background-color:@bg ; color: white;
+			}
+			
+		}
+		
+	}
+	.header-bottom{
+		width: @width;height: 50px;
+		.clearFix();
+		.allClass{
+			width: 210px;height: 50px;line-height: 50px;font-size: 20px;
+			text-align: center;
+			float: left;
+			margin-left: 80px;margin-right: 20px;
+			color: white;
+			background-color: @bg;
+		}
+		.nav{
+			float: left;
+			font-size: 16px; color: @color;
+			line-height: 50px;
+			a{
+				display: inline-block;
+				margin-right: 40px;
+			}
+		}
+	}
+}
